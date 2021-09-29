@@ -1,1 +1,3 @@
-"# django-project" 
+# django-project
+
+### My first django project for practice perpose 
