@@ -1,4 +1,4 @@
-<form action="{% url 'polls:vote' question.id " method="post">
+<form action="{% url 'polls:vote' question.id %}" method="POST">
     {% csrf_token %}
     <fieldset>
         <legend>
@@ -12,5 +12,6 @@
             <label for="choice{{forloop.counter}}">{{choice.choice_text}}</label><br>
         {%endfor%}
     </fieldset>
+    <br>
     <input type="submit" value="Vote">
 </form>
